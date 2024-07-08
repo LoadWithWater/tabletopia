@@ -1,12 +1,14 @@
 <template>
   <div class="home">
     <AppHeader />
-    <h1>Welcome to the Main Page</h1>
+    <div class="content">
+      <h1>Welcome to the Main Page</h1>
+    </div>
   </div>
 </template>
 
 <script>
-import AppHeader from '@/components/AppHeader.vue';
+import AppHeader from '../components/AppHeader.vue';
 
 export default {
   name: 'HomeView',
@@ -19,6 +21,8 @@ export default {
 <style scoped>
 .home {
   text-align: center;
-  margin-top: 50px;
+}
+.content {
+  padding-top: 60px; /* 헤더 높이만큼 패딩 추가 */
 }
 </style>

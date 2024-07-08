@@ -1,15 +1,19 @@
 <template>
   <header>
     <nav>
-      <div class="music-control">
+      <div class="left">
         <button @click="toggleMusic">
           <span v-if="isPlaying">⏸️</span>
           <span v-else>▶️</span>
         </button>
-        <audio ref="audio" src="/Title.mp3"></audio>
+        <audio ref="audio" src="/music.mp3"></audio>
       </div>
-      <router-link to="/">Home</router-link>
-      <router-link to="/login">Login</router-link>
+      <div class="center">
+        <router-link to="/">Home</router-link>
+      </div>
+      <div class="right">
+        <router-link to="/login">Login</router-link>
+      </div>
     </nav>
   </header>
 </template>
@@ -42,22 +46,36 @@ header {
   color: white;
   padding: 10px;
   text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left, .center, .right {
+  flex: 1;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+}
+.left {
+  justify-content: flex-start;
+}
+.center, .right {
+  justify-content: right;
+  padding-right: 10px;
 }
 a {
   color: white;
   text-decoration: none;
+  margin: 0 10px;
 }
 a:hover {
   text-decoration: underline;
-}
-.music-control {
-  margin-right: auto;
 }
 button {
   background: none;

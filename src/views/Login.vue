@@ -1,24 +1,26 @@
 <template>
   <div class="login">
     <AppHeader />
-    <h1>Login</h1>
-    <form @submit.prevent="handleLogin">
-      <div>
-        <label for="username">Username:</label>
-        <input type="text" id="username" v-model="username" required />
-      </div>
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" v-model="password" required />
-      </div>
-      <button type="submit">Login</button>
-    </form>
+    <div class="content">
+      <h1>Login</h1>
+      <form @submit.prevent="handleLogin">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" v-model="username" required />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" v-model="password" required />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
   </div>
 </template>
 
 <script>
 import { ref } from 'vue';
-import AppHeader from '@/components/AppHeader.vue';
+import AppHeader from '../components/AppHeader.vue';
 
 export default {
   name: 'LoginView',
@@ -46,7 +48,9 @@ export default {
 <style scoped>
 .login {
   text-align: center;
-  margin-top: 50px;
+}
+.content {
+  padding-top: 60px; /* 헤더 높이만큼 패딩 추가 */
 }
 form {
   display: inline-block;
