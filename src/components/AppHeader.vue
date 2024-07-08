@@ -6,7 +6,7 @@
           <span v-if="isPlaying">⏸️</span>
           <span v-else>▶️</span>
         </button>
-        <audio ref="audio" src="/music.mp3"></audio>
+        <audio ref="audio" src="/Title.mp3"></audio>
       </div>
       <div class="center">
         <router-link to="/">Home</router-link>
