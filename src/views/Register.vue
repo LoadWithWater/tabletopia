@@ -77,6 +77,7 @@
 <style scoped>
   .register {
     text-align: center;
+    background-color: gray;
   }
   .content {
     padding-top: 60px; /* 헤더 높이만큼 패딩 추가 */
@@ -97,4 +98,3 @@
     margin-top: 10px;
   }
 </style>
-  

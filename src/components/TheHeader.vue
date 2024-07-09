@@ -11,6 +11,9 @@
         </button>
         <audio ref="audio" src="/Title.mp3"></audio>
       </div>
+      <div class="hall">
+        <router-link to="/hall">Hall</router-link>
+      </div>
       <div class="login">
         <router-link to="/login">Login</router-link>
       </div>
@@ -59,7 +62,7 @@ export default {
     justify-content: space-between;
     align-items: center;
   }
-  .player, .home, .login, .register {
+  .player, .home, .hall, .login, .register {
     flex: 1;
     display: flex;
     align-items: center;
