@@ -20,7 +20,7 @@
 
 <script>
 import { ref } from 'vue';
-import AppHeader from '../components/AppHeader.vue';
+import AppHeader from '../components/TheHeader.vue';
 
 export default {
   name: 'LoginView',

@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'AppHeader',
+  name: 'TheHeader',
   data() {
     return {
       isPlaying: false
