@@ -3,6 +3,7 @@
     <AppHeader />
     <div class="content">
       <h1>Welcome to the Main Page</h1>
+      <img src="../../public/main.png">
     </div>
   </div>
 </template>
