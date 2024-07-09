@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <AppHeader />
+    <TheHeader />
     <div class="content">
       <h1>Login</h1>
       <form @submit.prevent="handleLogin">
@@ -20,12 +20,12 @@
 
 <script>
 import { ref } from 'vue';
-import AppHeader from '../components/TheHeader.vue';
+import TheHeader from '../components/TheHeader.vue';
 
 export default {
   name: 'LoginView',
   components: {
-    AppHeader
+    TheHeader
   },
   setup() {
     const username = ref('');

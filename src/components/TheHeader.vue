@@ -14,6 +14,9 @@
       <div class="login">
         <router-link to="/login">Login</router-link>
       </div>
+      <div class="register">
+        <router-link to="/register">Register</router-link>
+      </div>
     </nav>
   </header>
 </template>
@@ -56,7 +59,7 @@ export default {
     justify-content: space-between;
     align-items: center;
   }
-  .player, .home, .login {
+  .player, .home, .login, .register {
     flex: 1;
     display: flex;
     align-items: center;
@@ -64,7 +67,7 @@ export default {
   .home, .player {
     justify-content: left;
   }
-  .login {
+  .login, .register {
     justify-content: right;
     padding-right: 20px;
   }

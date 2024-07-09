@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <AppHeader />
+    <TheHeader />
     <div class="content">
       <h1>Welcome to the Main Page</h1>
       <img src="../../public/main.png">
@@ -9,12 +9,12 @@
 </template>
 
 <script>
-  import AppHeader from '../components/TheHeader.vue';
+  import TheHeader from '../components/TheHeader.vue';
 
   export default {
     name: 'HomeView',
     components: {
-      AppHeader
+      TheHeader
     }
   };
 </script>
