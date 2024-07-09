@@ -46,21 +46,21 @@ export default {
 </script>
 
 <style scoped>
-.login {
-  text-align: center;
-}
-.content {
-  padding-top: 60px; /* 헤더 높이만큼 패딩 추가 */
-}
-form {
-  display: inline-block;
-  text-align: left;
-}
-form div {
-  margin-bottom: 10px;
-}
-button {
-  display: block;
-  width: 100%;
-}
+  .login {
+    text-align: center;
+  }
+  .content {
+    padding-top: 60px; /* 헤더 높이만큼 패딩 추가 */
+  }
+  form {
+    display: inline-block;
+    text-align: left;
+  }
+  form div {
+    margin-bottom: 10px;
+  }
+  button {
+    display: block;
+    width: 100%;
+  }
 </style>
